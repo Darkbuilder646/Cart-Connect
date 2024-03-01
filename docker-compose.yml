@@ -1,0 +1,17 @@
+version: '3'
+services:
+  postgres:
+    container_name: cartconnectdata
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: cartconnect
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5050:5432
+
+volumes:
+  postgres_data:
