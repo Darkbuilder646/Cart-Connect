@@ -4,5 +4,6 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
         <include file="classpath:/db/changelog/update/001-db.changelog-add_users.xml"/>
+<!--        <include file="classpath:/db/changelog/update/002-db.changelog-add_product_and_category.xml"/>-->
 
 </databaseChangeLog>

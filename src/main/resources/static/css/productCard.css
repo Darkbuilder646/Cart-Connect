@@ -1,0 +1,48 @@
+.card {
+    height: 100px;
+    min-height: 200px;
+    width: calc(100% - 24px);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: #fafafa;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.card-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.price-text, .name-text {
+    font-weight: bold;
+}
+
+.desc-text {
+    flex: 1;
+}
+
+.card-item button {
+    height: 42px;
+    padding: 10px 20px;
+    border: 2px solid #8cde81;
+    border-radius: 4px;
+    background-color: #c4ffbc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-item button:hover {
+    background-color: #ace0a5;
+}
+

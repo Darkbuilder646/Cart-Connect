@@ -18,30 +18,13 @@ public interface UsersMapper {
     void update(Users user);
 
     @Select("SELECT * FROM users")
-    @Results({
-            @Result(property = "id", column = "id"),
-            @Result(property = "pseudo", column = "pseudo"),
-            @Result(property = "email", column = "email"),
-            @Result(property = "password", column = "password")
-    })
     List<Users> getAllUsers();
 
     @Select("SELECT * FROM users WHERE id = #{id}")
-    @Results({
-            @Result(property = "id", column = "id"),
-            @Result(property = "pseudo", column = "pseudo"),
-            @Result(property = "email", column = "email"),
-            @Result(property = "password", column = "password")
-    })
     Users getById(Long id);
 
     @Select("SELECT * FROM users WHERE email = #{email}")
-    @Results({
-            @Result(property = "id", column = "id"),
-            @Result(property = "pseudo", column = "pseudo"),
-            @Result(property = "email", column = "email"),
-            @Result(property = "password", column = "password")
-    })
     Users getByEmail(String email);
+
 
 }
